@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script src="jquery.js"></script>
+    <script src="table2excel.js"></script>
+    <script>
+        $(document).ready(function() {
+            console.log($('table').table2excel({cellWidth: 80, bodyBg: '#000000', bodyColor: '#FFFFFF'}));
+        });
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Hello</th>
+            <th>Salut</th>
+            <th>Plop</th>
+        </tr>
+        <tr>
+            <td>Cel1</td>
+            <td>Cel2</td>
+            <td>Cel3</td>
+        </tr>
+        <tr>
+            <td>Cel4</td>
+            <td>Cel5</td>
+            <td>Cel6</td>
+        </tr>
+    </table>
+</body>
+</html>
